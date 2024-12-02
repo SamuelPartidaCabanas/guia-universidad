@@ -4,10 +4,11 @@ Archivo principal de la aplicación Streamlit para la Guía Interactiva de la Un
 Este script configura la interfaz de usuario, maneja la interacción con el usuario
 y muestra imágenes y mapas para mejorar la experiencia del usuario.
 
-Autor: [Tu Nombre]
-Fecha: [Fecha Actual]
+Autor: [Samuel Partida Cabañas]
+Fecha: [01/12/24]
 """
 
+import os
 import json
 import streamlit as st
 from funciones_llm import procesar_consulta
@@ -19,7 +20,8 @@ def cargar_nodos():
     Returns:
         list: Lista de nodos cargados desde 'nodos.json'.
     """
-    with open("nodos.json", "r", encoding="utf-8") as file:
+    ruta_nodos = os.path.join(os.path.dirname(__file__), "nodos.json")
+    with open(ruta_nodos, "r", encoding="utf-8") as file:
         return json.load(file)["nodos"]
 
 def main():
@@ -43,12 +45,14 @@ def main():
     with col1:
         st.write("")  # Espacio vacío a la izquierda
     with col2:
-        st.image("logo_universidad.png", use_container_width=True)  # Logo centrado
+        ruta_logo = os.path.join(os.path.dirname(__file__), "logo_universidad.png")
+        st.image(ruta_logo, use_container_width=True)  # Logo centrado
     with col3:
         st.write("")  # Espacio vacío a la derecha
 
     # Mostrar imagen del mapa de la universidad
-    st.image("mapa_universidad.png", use_container_width=True)
+    ruta_mapa = os.path.join(os.path.dirname(__file__), "mapa_universidad.png")
+    st.image(ruta_mapa, use_container_width=True)
 
     # Separador
     st.markdown("---")

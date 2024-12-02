@@ -2,8 +2,8 @@
 Módulo que contiene las funciones para procesar la consulta del usuario,
 interactuar con el modelo LLM y calcular la ruta utilizando el algoritmo de Dijkstra.
 
-Autor: [Tu Nombre]
-Fecha: [Fecha Actual]
+Autor: [Samuel Partida Cabañas]
+Fecha: [01/12/24]
 """
 
 import os

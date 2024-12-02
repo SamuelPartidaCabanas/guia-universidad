@@ -1,0 +1,18 @@
+{
+    "nodos": [
+        { "id": "Coordinación_deportes", "nombre": "Coordinación de deportes" },
+        { "id": "canchas_futbol_voleibol_pista", "nombre": "Canchas fútbol voleibol pista" },
+        { "id": "canchas_basquet_tennis_gimnasio", "nombre": "Canchas básquet tennis gimnasio" },
+        { "id": "Puerta_2", "nombre": "Puerta 2" },
+        { "id": "Estacionamiento_piramide", "nombre": "Estacionamiento pirámide" },
+        { "id": "canchas_beisbol", "nombre": "Canchas béisbol" },
+        { "id": "Taller_mecanica", "nombre": "Taller mecánica" },
+        { "id": "Puerta_12", "nombre": "Puerta 12" },
+        { "id": "Artes", "nombre": "Artes" },
+        { "id": "INIAT", "nombre": "INIAT" },
+        { "id": "Edificio_F", "nombre": "Edificio F" },
+        { "id": "Laboratorios_L", "nombre": "Laboratorios L" },
+        { "id": "Edificio_G", "nombre": "Edificio G" }
+    ]
+}
+
